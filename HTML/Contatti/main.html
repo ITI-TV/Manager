@@ -1,0 +1,69 @@
+<div class="containerContatti">
+    <div id="ReferentiProgettoText" class="side-by-sideContatti">
+        <h1>Prof Referente/i del progetto</h1>
+        <table id="ReferentiProgetto">
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Email</th>
+            </tr>
+        </table>
+    </div>
+    <div id="ProjectManagerProgettoText" class="side-by-sideContatti">
+        <h1>Studenti Project Manager del progetto</h1>
+        <table id="ProjectManagerProgetto">
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Email</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script src="js/Contatti/main.js"></script>
+
+<style>
+    .containerContatti {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        color: white;
+    }
+
+    .side-by-sideContatti {
+        width: 45%;
+    }
+
+    #ProjectManagerProgetto,
+    #ReferentiProgetto {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    #ProjectManagerProgetto th,
+    #ReferentiProgetto th {
+        background-color: #005cd7;
+        color: white;
+    }
+
+    #ProjectManagerProgetto th,
+    #ReferentiProgetto th,
+    #ProjectManagerProgetto td,
+    #ReferentiProgetto td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    @media (max-width: 992px) {
+        .containerContatti {
+            flex-direction: column;
+        }
+
+        .side-by-sideContatti {
+            width: 100%;
+        }
+
+    }
+</style>
